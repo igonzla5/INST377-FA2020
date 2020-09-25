@@ -1,1 +1,57 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Israel Gonzalez's Lab 4</title>
+        <meta name="author" content="Israel Gonzalez">
+        <link rel='stylesheet' href="styles.css" />
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Israel Gonzalez's Lab 4</h1>
+            <form>
+                <ul class="flex-outer">
+                    <li>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" maxlength="140">
+                    </li>
+                    <li>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" maxlength="140">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </li>
+                    <li>
+                        <label for="message">Text feild</label>
+                        <textarea rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
+                    </li>
+                    <li>
+                        <p>Age</p>
+                        <ul class="flex-inner">
+                            <li>
+                                <input type="checkbox" id="age1">
+                                <label for="age1">18-35</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="age2">
+                                <label for="age2">35-50</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="age3">
+                                <label for="age3">50-60</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="submit">SUBMIT FORM</button>
+            </form>
+        </div>
+    </body>
+</html>
