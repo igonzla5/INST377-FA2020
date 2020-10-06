@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Israel Gonzalez's Lab 4</title>
+        <meta name="author" content="Israel Gonzalez">
+        <link rel='stylesheet' href="styles.css" />
+
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="container">
+        
+            <h1>Israel Gonzalez's Lab 4</h1>
+            <form action="/api" method="post">
+                <ul class="flex-outer">
+                    <li>
+                        <label for="fname">First Name</label>
+                        <input name="fname" type="text" id="fname" maxlength="140">
+                    </li>
+                    <li>
+                        <label for="lname">Last Name</label>
+                        <input name="lname" type="text" id="lname" maxlength="140">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input name="email" type="email" id="email">
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input name="phone" type="tel" id="phone">
+                    </li>
+                    <li>
+                        <label for="message">Text feild</label>
+                        <textarea name="message" rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
+                    </li>
+                    <li>
+                        <p>Age</p>
+                        <ul class="flex-inner">
+                            <li>
+                                <input name="age1" type="checkbox" id="age1">
+                                <label for="age1">18-35</label>
+                            </li>
+                            <li>
+                                <input name="age2" type="checkbox" id="age2">
+                                <label for="age2">35-50</label>
+                            </li>
+                            <li>
+                                <input name="age3" type="checkbox" id="age3">
+                                <label for="age3">50-60</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button name="submit" id="submit" type="submit">SUBMIT FORM</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
