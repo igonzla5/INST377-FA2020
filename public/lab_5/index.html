@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Israel Gonzalez's Lab 4</title>
+        <title>Israel Gonzalez's Lab 5</title>
         <meta name="author" content="Israel Gonzalez">
         <link rel='stylesheet' href="styles.css" />
 
@@ -11,7 +11,7 @@
         <div class="wrapper">
         <div class="container">
         
-            <h1>Israel Gonzalez's Lab 4</h1>
+            <h1>Israel Gonzalez's Lab 5</h1>
             <form action="/api" method="post">
                 <ul class="flex-outer">
                     <li>
@@ -49,14 +49,23 @@
                                 <input name="age3" type="checkbox" id="age3">
                                 <label for="age3">50-60</label>
                             </li>
+                            
                         </ul>
                     </li>
                     <li>
-                        <button name="submit" id="submit" type="submit">SUBMIT FORM</button>
+                        <button class="checkboxes-list-label" name="submit" id="submit" type="submit">SUBMIT FORM</button>
+                        <button type="Activate" onclick="clickMe()">ACTIVATE</button>
                     </li>
                 </ul>
             </form>
         </div>
         </div>
+        function testFunction() {
+            fetch('/api')
+            .then((response) => response.text())
+            .then((response) => {
+                 console.log(response);
+            })
+       }
     </body>
 </html>
