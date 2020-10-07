@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Israel Gonzalez's Lab 5</title>
+        <title>Israel Gonzalez's Lab 4</title>
         <meta name="author" content="Israel Gonzalez">
         <link rel='stylesheet' href="styles.css" />
 
@@ -10,8 +10,11 @@
     <body>
         <div class="wrapper">
         <div class="container">
+            <div class="header">
+                <h1>Lab 4/Lab 5 for Israel Gonzalez</h1>
+            </div>
         
-            <h1>Israel Gonzalez's Lab 5</h1>
+           
             <form action="/api" method="post">
                 <ul class="flex-outer">
                     <li>
@@ -35,7 +38,7 @@
                         <textarea name="message" rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
                     </li>
                     <li>
-                        <p>Age</p>
+                        <p class="checkboxes-list-label">Age</p>
                         <ul class="flex-inner">
                             <li>
                                 <input name="age1" type="checkbox" id="age1">
@@ -53,19 +56,29 @@
                         </ul>
                     </li>
                     <li>
-                        <button class="checkboxes-list-label" name="submit" id="submit" type="submit">SUBMIT FORM</button>
-                        <button type="Activate" onclick="clickMe()">ACTIVATE</button>
+                        <button  name="submit" id="submit" type="submit">SUBMIT FORM</button>
+                        <button  name="activate" id="activate" type="button" onclick="testfunction()">Activate</button>  
                     </li>
                 </ul>
             </form>
         </div>
         </div>
+        <script>
         function testFunction() {
+            const elements = documents.querySelectorAll('.checkboxes-list-label li label')
+            const fruitArray = ['apple', 'kiwi', 'pomelo']
+            elements.forEach((el, i) => {
+                const text = el.innerText;
+                console.log(text);
+                el.innerText = fruitArray[i];
+            })
+
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
                  console.log(response);
             })
        }
+        </script>
     </body>
 </html>
