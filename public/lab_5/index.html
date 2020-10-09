@@ -69,12 +69,31 @@
             .then((response) => response.text())
             .then((response) => {
                 console.log("Israel Gonzalez");
-                const myHeading = document.querySelector(".header h1");
+
+                // i am changing the header
+                const myHeading = document.querySelector(".header h1"); 
                 myHeading.textContent = "Lab 5 for Israel Gonzalez";
-                let button = document.querySelector('background');
-                button.styles.background = 'rgb(241, 188, 20)';
-                const element = documents.querySelectorAll('')
+
+
+                const body = document.querySelector("body");
+                document.body.style.backgroundColor = "blue";
+
+                const age = document.querySelector('.checkbox-list-label')
+                age.textContent = "Fruits";
+
+            const elements = document.querySelectorAll('.flex-inner label')
+            const fruitArray = ['apple', 'kiwi', 'pomelo']
+            elements.forEach((el, i) => {
+                el.innerText = fruitArray[i];
             })
+
+            const center = document.querySelector(".flex-outer");
+            center.style.margin = "0 auto";
+                
+            })
+            
+
+           
             
         }
         </script>
