@@ -68,7 +68,11 @@
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
-                console.log("Lab 5 for Israel Gonzalez");
+                console.log("Israel Gonzalez");
+                const myHeading = document.querySelector(".header h1");
+                myHeading.textContent = "Lab 5 for Israel Gonzalez";
+                let button = document.querySelector('background');
+                button.styles.background = 'rgb(241, 188, 20)';
                 const element = documents.querySelectorAll('')
             })
             
