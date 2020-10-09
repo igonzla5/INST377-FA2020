@@ -11,7 +11,7 @@
         <div class="wrapper">
         <div class="container">
             <div class="header">
-                <h1>Lab 4/Lab 5 for Israel Gonzalez</h1>
+                <h1>Israel Gonzalez's lab 4</h1>
             </div>
         
            
@@ -38,7 +38,7 @@
                         <textarea name="message" rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
                     </li>
                     <li>
-                        <p class="checkboxes-list-label">Age</p>
+                        <p class="checkbox-list-label">Age</p>
                         <ul class="flex-inner">
                             <li>
                                 <input name="age1" type="checkbox" id="age1">
@@ -57,7 +57,7 @@
                     </li>
                     <li>
                         <button  name="submit" id="submit" type="submit">SUBMIT FORM</button>
-                        <button  name="activate" id="activate" type="button" onclick="testfunction()">Activate</button>  
+                        <button  onClick="testFunction()" class="button" name="activate" id="activate" type="button">Activate</button>  
                     </li>
                 </ul>
             </form>
@@ -65,20 +65,14 @@
         </div>
         <script>
         function testFunction() {
-            const elements = documents.querySelectorAll('.checkboxes-list-label li label')
-            const fruitArray = ['apple', 'kiwi', 'pomelo']
-            elements.forEach((el, i) => {
-                const text = el.innerText;
-                console.log(text);
-                el.innerText = fruitArray[i];
-            })
-
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
-                 console.log(response);
+                console.log("Lab 5 for Israel Gonzalez");
+                const element = documents.querySelectorAll('')
             })
-       }
+            
+        }
         </script>
     </body>
 </html>
