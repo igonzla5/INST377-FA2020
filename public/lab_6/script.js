@@ -38,7 +38,7 @@ document.body.addEventListener('submit', async (e) => {
       const newArr = range(10);
       const newArr2 = newArr.map(() => {
         const number = Math.floor(Math.random() * 243);
-        return fromServer[number].name;
+        return fromServer[number];
       });
 
       const reverseList = newArr2.sort((a, b) => sortFunction(b, a, 'name'));
